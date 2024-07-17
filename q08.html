@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Botão de Alto Contraste</title>
+</head>
+<body>
+    <p>Texto para testar o alto contraste.</p>
+    <button onclick="altoContraste()">Alto Contraste</button>
+    <button onclick="resetarCores()">Resetar Cores</button>
+
+    <script>
+        function altoContraste() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function resetarCores() {
+            document.body.style.backgroundColor = "";
+            document.body.style.color = "";
+        }
+    </script>
+</body>
+</html>

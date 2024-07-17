@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo textContent e innerHTML</title>
+</head>
+<body>
+    <div id="exemplo1">Texto <b>em negrito</b></div>
+    <div id="exemplo2">Texto <b>em negrito</b></div>
+    <button onclick="mostrarDiferenca()">Mostrar Diferença</button>
+
+    <script>
+        function mostrarDiferenca() {
+            var exemplo1 = document.getElementById("exemplo1");
+            var exemplo2 = document.getElementById("exemplo2");
+
+            alert("textContent: " + exemplo1.textContent);
+            alert("innerHTML: " + exemplo2.innerHTML);
+        }
+    </script>
+</body>
+</html>

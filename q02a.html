@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo getElementById</title>
+</head>
+<body>
+    <h1 id="titulo">Título Original</h1>
+    <button onclick="alterarTitulo()">Alterar Título</button>
+
+    <script>
+        function alterarTitulo() {
+            var titulo = document.getElementById("titulo");
+            titulo.textContent = "Título Alterado!";
+        }
+    </script>
+</body>
+</html>

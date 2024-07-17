@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aumentar e Diminuir Texto</title>
+</head>
+<body>
+    <p>Texto para ajustar o tamanho.</p>
+    <button onclick="aumentarTexto()">Aumentar Texto</button>
+    <button onclick="diminuirTexto()">Diminuir Texto</button>
+
+    <script>
+        function ajustarTamanho(incremento) {
+            var body = document.body;
+            var tamanhoAtual = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            var tamanhoNovo = parseFloat(tamanhoAtual) + incremento;
+            body.style.fontSize = tamanhoNovo + 'px';
+        }
+
+        function aumentarTexto() {
+            ajustarTamanho(2);
+        }
+
+        function diminuirTexto() {
+            ajustarTamanho(-2);
+        }
+    </script>
+</body>
+</html>
